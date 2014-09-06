@@ -66,7 +66,7 @@ public class LogRenderer implements NamedRenderer {
                 String relPath = PathUtils.relativize(htmlResult.getDir(), path);
                 result.append(prefix)
                     .append("<a href=\"").append(EscapeUtils.encodeUri(relPath)).append("\">")
-                    .append(StringEscapeUtils.escapeHtml4(path))
+                    .append(StringEscapeUtils.escapeHtml4(relPath))
                     .append("</a>")
                     .append(matcher.group(ATTACHMENT_SUFFIX));
             } else {

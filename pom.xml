@@ -3,7 +3,7 @@
 
   <groupId>jp.vmi</groupId>
   <artifactId>selenese-runner-java</artifactId>
-  <version>1.5.1-SNAPSHOT</version>
+  <version>1.5.1-PATCHPUMP</version>
   <packaging>jar</packaging>
 
   <parent>
