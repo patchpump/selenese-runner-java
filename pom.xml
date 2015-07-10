@@ -1,21 +1,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>jp.vmi</groupId>
+  <groupId>patchpump.selenese-runner</groupId>
   <artifactId>selenese-runner-java</artifactId>
-  <version>1.5.4-PATCHPUMP</version>
+  <version>1.5.4-PATCHPUMP-R0</version>
   <packaging>jar</packaging>
-
-  <parent>
-    <groupId>org.sonatype.oss</groupId>
-    <artifactId>oss-parent</artifactId>
-    <version>7</version>
-  </parent>
 
   <name>selenese-runner-java</name>
   <url>https://github.com/patchpump/selenese-runner-java</url>
-  <description>This is selenese script interpreter implemented by Java.
-It supports test-case and test-suite which are Selenium IDE's native format.</description>
+  <description>This is selenese script interpreter implemented by Java. It supports test-case and test-suite which are Selenium IDE's native format.</description>
 
   <licenses>
     <license>
@@ -43,6 +36,10 @@ It supports test-case and test-suite which are Selenium IDE's native format.</de
       <name>ITO Hayato</name>
       <email>haya10.ito@gmail.com</email>
     </developer>
+    <developer>
+      <id>patchpump</id>
+      <name>patchpump</name>
+    </developer>
   </developers>
 
   <prerequisites>
@@ -57,15 +54,6 @@ It supports test-case and test-suite which are Selenium IDE's native format.</de
     <slf4j.version>1.7.7</slf4j.version>
     <maven.version.rules>file://${basedir}/version-rules.xml</maven.version.rules>
   </properties>
-
-  <!--
-  <repositories>
-    <repository>
-      <id>repo.jenkins-ci.org</id>
-      <url>http://repo.jenkins-ci.org/public/</url>
-    </repository>
-  </repositories>
-  -->
 
   <profiles>
     <profile>
@@ -386,26 +374,6 @@ It supports test-case and test-suite which are Selenium IDE's native format.</de
       <artifactId>webbit</artifactId>
       <version>0.4.15</version>
     </dependency>
-    <!--
-    <dependency>
-      <groupId>org.jenkins-ci.main</groupId>
-      <artifactId>jenkins-core</artifactId>
-      <version>1.478</version>
-      <scope>test</scope>
-      <exclusions>
-        <exclusion>
-          <artifactId>commons-logging</artifactId>
-          <groupId>commons-logging</groupId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>javax.servlet</groupId>
-      <artifactId>javax.servlet-api</artifactId>
-      <version>3.0.1</version>
-      <scope>test</scope>
-    </dependency>
-    -->
     <dependency>
       <groupId>io.netty</groupId>
       <artifactId>netty</artifactId>
